@@ -11,6 +11,6 @@ RUN powershell -NoProfile -Command \
         Move-Item '%ProgramFiles%\java*' '%ProgramFiles%\jdk'; \
         Remove-Item -Force jdk.zip
 
-ENV JAVA_HOME "%ProgramFiles%\jdk\jre"
+RUN setx /M JAVA_HOME "%ProgramFiles%\jdk\jre"
 
 RUN setx /M PATH "%PATH%;%ProgramFiles%\jdk\bin"
