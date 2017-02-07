@@ -2,8 +2,8 @@ FROM microsoft/nanoserver:latest
 
 MAINTAINER Boshi Lian <farmer1992@gmail.com>
 
-ENV JDK_URL https://github.com/ojdkbuild/ojdkbuild/releases/download/1.8.0.111-1/java-1.8.0-openjdk-1.8.0.111-1.b15.ojdkbuild.windows.x86_64.zip
-ENV JDK_VERSION 1.8.0_111-1-ojdkbuild
+ENV JDK_URL https://github.com/ojdkbuild/ojdkbuild/releases/download/1.8.0.121-1/java-1.8.0-openjdk-1.8.0.121-1.b13.ojdkbuild.windows.x86_64.zip
+ENV JDK_VERSION 1.8.0_121-1-ojdkbuild
 
 RUN powershell -NoProfile -Command \
         Invoke-WebRequest %JDK_URL% -OutFile jdk.zip; \
