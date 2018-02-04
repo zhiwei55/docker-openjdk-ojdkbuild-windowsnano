@@ -48,5 +48,5 @@ def pull_release():
 for d,v,u in pull_release():
     f = open(d + '/Dockerfile', 'w')
     with(f):
-        f.write(T % (v,u))
+        f.write(T % (u, v))
         f.write(STATIC)
