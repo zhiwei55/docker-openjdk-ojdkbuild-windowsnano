@@ -1,4 +1,4 @@
-#!/bin/usr/env python
+#!/usr/bin/env python
 
 import requests
 import itertools
@@ -19,7 +19,7 @@ RUN powershell -NoProfile -Command \
         Move-Item '%ProgramFiles%\java*' '%ProgramFiles%\jdk'; \
         Remove-Item -Force jdk.zip
 
-RUN setx /M JAVA_HOME "%ProgramFiles%\jdk\jre"
+RUN setx /M JAVA_HOME "%ProgramFiles%\jdk\"
 
 RUN setx /M PATH "%PATH%;%ProgramFiles%\jdk\bin"
 '''

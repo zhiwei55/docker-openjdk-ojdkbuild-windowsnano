@@ -2,8 +2,8 @@ FROM microsoft/nanoserver:latest
 
 MAINTAINER Boshi Lian <farmer1992@gmail.com>
 
-ENV JDK_URL https://github.com/ojdkbuild/ojdkbuild/releases/download/1.8.0.171-1/java-1.8.0-openjdk-1.8.0.171-1.b10.ojdkbuild.windows.x86_64.zip
-ENV JDK_VERSION 1.8.0.171-1-ojdkbuild
+ENV JDK_URL https://github.com/ojdkbuild/ojdkbuild/releases/download/10.0.1-1/java-10-openjdk-10.0.1-1.b10.ojdkbuild.windows.x86_64.zip
+ENV JDK_VERSION 10.0.1-1-ojdkbuild
 
 
 RUN powershell -NoProfile -Command \
